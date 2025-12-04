@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Icons from 'lucide-react';
 import { SOCIALS } from '../constants';
 
+const EMAIL = 'alehooleo@gmail.com';
+
 const Footer: React.FC = () => {
+  const [showCopied, setShowCopied] = useState(false);
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    } catch (err) {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = EMAIL;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    }
+  };
+
   return (
     <footer id="contact" className="relative pt-32 pb-12 border-t border-white/10 bg-dark-900/80 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -30,9 +52,23 @@ const Footer: React.FC = () => {
                         <div className="absolute -top-2.5 left-8 bg-dark-900 px-2 text-neon-cyan text-xs font-mono tracking-widest z-30">
                             CONTACT_CHANNEL
                         </div>
-                        <a href="mailto:alehooleo@gmail.com" className="block text-xl sm:text-2xl md:text-3xl font-display font-bold text-white hover:text-neon-cyan transition-colors text-center break-all">
-                            alehooleo@gmail.com
-                        </a>
+                        <button 
+                          onClick={handleCopyEmail}
+                          className="block text-xl sm:text-2xl md:text-3xl font-display font-bold text-white hover:text-neon-cyan transition-colors text-center break-all cursor-pointer bg-transparent border-none"
+                        >
+                            {EMAIL}
+                        </button>
+                        <span className="text-xs text-gray-500 font-mono mt-2">Click to copy</span>
+                        
+                        {/* Copied Toast Popup */}
+                        <div 
+                          className={`absolute -bottom-16 left-1/2 -translate-x-1/2 px-4 py-2 bg-neon-green text-dark-900 font-mono text-sm font-bold tracking-wider tech-border-sm transition-all duration-300 flex items-center gap-2 ${
+                            showCopied ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'
+                          }`}
+                        >
+                          <Icons.Check size={16} />
+                          EMAIL COPIED!
+                        </div>
                     </div>
                  </div>
             </div>
