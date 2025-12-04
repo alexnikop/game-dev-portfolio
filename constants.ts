@@ -113,9 +113,9 @@ export const COLLAB_PROJECTS: Project[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'Unity / C#', level: 90, icon: 'Unity' }, 
-  { name: 'Godot / C# / GDScript', level: 90, icon: 'Gamepad2' },
-  { name: 'Shaders HLSL / GLSL', level: 80, icon: 'Palette' }, 
+  { name: 'Unity / C#', level: 85, icon: 'Unity' }, 
+  { name: 'Godot / C# / GDScript', level: 85, icon: 'Gamepad2' },
+  { name: 'Shaders HLSL / GLSL', level: 70, icon: 'Palette' }, 
   { name: '3D Math & Physics', level: 90, icon: 'Sigma' },
   { name: 'Blender 3D Modeling', level: 50, icon: 'Blender' },
   { name: 'Performance Profiling', level: 80, icon: 'Zap' },
