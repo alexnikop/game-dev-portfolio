@@ -55,17 +55,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </>
         )}
         
-        {/* Overlay Actions (Only visible if not playing video) */}
-        {!isPlaying && (
+        {/* Overlay Actions (Only visible if there's a video and not playing) */}
+        {!isPlaying && project.videoUrl && (
           <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-[2px]">
-            {project.videoUrl && (
-                <button 
-                    onClick={handlePlayClick}
-                    className="flex items-center justify-center gap-2 px-6 py-3 bg-neon-purple text-white font-bold tracking-wider tech-border-sm arcade-btn neon-glow-pink hover:bg-neon-orange transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300"
-                >
-                    <Play size={16} fill="currentColor" /> PLAY CLIP
-                </button>
-            )}
+            <button 
+                onClick={handlePlayClick}
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-neon-purple text-white font-bold tracking-wider tech-border-sm arcade-btn neon-glow-pink hover:bg-neon-orange transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300"
+            >
+                <Play size={16} fill="currentColor" /> PLAY CLIP
+            </button>
           </div>
         )}
         

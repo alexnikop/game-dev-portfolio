@@ -4,7 +4,7 @@ import { SOLO_PROJECTS, COLLAB_PROJECTS } from '../constants';
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-32 relative">
+    <section id="projects" className="pt-16 sm:pt-20 md:pt-24 pb-32 relative">
       {/* --- SOLO PROJECTS SECTION --- */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
          <div className="flex items-center gap-6 mb-16">
@@ -57,10 +57,11 @@ const Projects: React.FC = () => {
                             </span>
                         </div>
 
-                        {/* Description - Whitespace Pre-Line handles \n */}
-                        <p className="text-sm text-gray-400 font-mono mb-8 leading-relaxed whitespace-pre-line">
-                            {project.description}
-                        </p>
+                        {/* Description - Supports HTML links */}
+                        <p 
+                            className="text-sm text-gray-400 font-mono mb-8 leading-relaxed whitespace-pre-line [&_a]:text-neon-cyan [&_a]:underline [&_a]:hover:text-neon-green [&_a]:transition-colors"
+                            dangerouslySetInnerHTML={{ __html: project.description }}
+                        />
 
                         <div className="flex flex-wrap gap-2 mt-auto">
                             {project.techStack.map(tech => (

@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col overflow-hidden pt-20 pb-8">
+    <section className="relative min-h-screen w-full flex flex-col overflow-hidden pt-28 sm:pt-24 md:pt-20 pb-8">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
          {/* Animated Glow Orbs - More vibrant */}
@@ -74,10 +74,10 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll Indicator - Part of content flow, always at bottom with min spacing */}
-      <div className="hidden sm:flex relative z-20 justify-center pointer-events-none flex-shrink-0">
-          <div className="flex flex-col items-center gap-3 animate-bounce">
-            <span className="text-xs md:text-sm font-mono tracking-[0.3em] uppercase text-neon-yellow animate-flicker">SCROLL</span>
-            <ArrowDown className="text-neon-cyan w-6 h-6 md:w-8 md:h-8" style={{ filter: 'drop-shadow(0 0 8px #00fff5)' }} />
+      <div className="flex relative z-20 justify-center pointer-events-none flex-shrink-0">
+          <div className="flex flex-col items-center gap-2 sm:gap-3 animate-bounce">
+            <span className="text-xs sm:text-sm font-mono tracking-[0.3em] uppercase text-neon-yellow animate-flicker">SCROLL</span>
+            <ArrowDown className="text-neon-cyan w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" style={{ filter: 'drop-shadow(0 0 8px #00fff5)' }} />
           </div>
       </div>
     </section>

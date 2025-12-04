@@ -8,7 +8,7 @@ export const SOLO_PROJECTS: Project[] = [
     id: 'p1',
     title: 'Crocogame',
     category: 'Roguelike Game',
-    description: 'A fast-paced roguelike game where you play as a crocodile trying to survive in a world full of predators.',
+    description: 'Fast-paced roguelike where you play as a crocodile surviving against endless predators.',
     imageUrl: 'crocogame.jpg',
     videoUrl: 'crocogame_trailer.mp4',
     link: 'https://store.steampowered.com/app/2486760/Crocogame/',
@@ -20,7 +20,7 @@ export const SOLO_PROJECTS: Project[] = [
     id: 'p1',
     title: 'Blockzilla',
     category: 'Puzzle Game',
-    description: 'A mind-bending puzzle game about pushing blocks around.',
+    description: 'A mind-bending puzzle game about pushing blocks — simple rules, tricky solutions.',
     imageUrl: 'blockzilla_showcase.png',
     link: 'https://play.google.com/store/apps/details?id=org.godotengine.blockogame&hl=en',
     techStack: ['Godot', 'GDScript', 'Android', 'Solo Project'],
@@ -31,7 +31,7 @@ export const SOLO_PROJECTS: Project[] = [
     id: 'p3',
     title: 'VFEZ-Godot',
     category: 'Plugin',
-    description: 'An easy-to-use Godot plugin for creating 2D and 3D visual effects easily. Similar to Unity All-in-one-shader plugin.',
+    description: 'A Godot plugin for creating 2D/3D visual effects with ease. Think Unity\'s All-in-One Shader, but for Godot.',
     imageUrl: 'vfez-godot-better-ratio.png',
     link: 'https://github.com/alexnikop/VFEZ-godot',
     techStack: ['Godot', 'GDScript', 'GLSL', 'Solo Project'],
@@ -42,7 +42,7 @@ export const SOLO_PROJECTS: Project[] = [
     id: 'p3',
     title: 'Untitled monster breeding game',
     category: 'Roguelike Game',
-    description: 'A Roguelike monster breeding game about combining monster parts and breeding monsters to create strategic auto-battler synergies.',
+    description: 'A roguelike auto-battler where you breed monsters and combine parts to create powerful synergies.',
     imageUrl: 'roguemon.png',
     videoUrl: 'RoguemonShowcase.mp4',
     // No link provided
@@ -52,9 +52,9 @@ export const SOLO_PROJECTS: Project[] = [
   },
   {
     id: 'p4',
-    title: 'Hexacore',
+    title: 'Hexacored',
     category: 'Roguelike Game',
-    description: 'A roguelike bullet-hell game about building a spaceship, through attaching hexagonal parts to it.',
+    description: 'A roguelike bullet-hell where you build your spaceship piece by piece using hexagonal modules.',
     imageUrl: 'hexacored.png',
     videoUrl: 'hexacore_showcase.mp4',
     // No video provided
@@ -69,22 +69,22 @@ export const COLLAB_PROJECTS: Project[] = [
     id: 'c1',
     title: '3D AR Preview App',
     category: 'Showcase App',
-    description: 'A Unity 3D AR app, aimed to preview AI generated 3D models in real world.',
+    description: 'A Unity AR app for previewing AI-generated 3D models in the real world. Built for <a href="https://3d4xr.v2.homelab.up2metric.com/" target="_blank" rel="noopener noreferrer">3D4XR</a>.',
     imageUrl: '3d4xr.png', 
     icon: '3d4xr.png', 
     techStack: ['Unity', 'AR'],
-    link: '#',
+    link: 'https://3d4xr.v2.homelab.up2metric.com/',
     status: 'released'
   },
   {
     id: 'c2',
-    title: '3D VR Basketball Preview App',
+    title: '3D VR Preview App',
     category: 'Showcase App',
-    description: 'A Unity 3D VR app, aimed to preview AI generated 3D models in VR Space.',
+    description: 'A Unity VR app for previewing AI-generated 3D models in virtual space. Built for <a href="https://3d4xr.v2.homelab.up2metric.com/" target="_blank" rel="noopener noreferrer">3D4XR</a>.',
     imageUrl: 'vrBasketball.jpeg',
     icon: 'vrBasketball.jpeg', 
     techStack: ['Unity', 'VR'],
-    link: '#',
+    link: 'https://3d4xr.v2.homelab.up2metric.com/',
     status: 'released'
   },
   {
@@ -113,7 +113,7 @@ export const COLLAB_PROJECTS: Project[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'Unity / C#', level: 85, icon: 'Unity' }, 
+  { name: 'Unity / C#', level: 85, icon: 'Gamepad' }, 
   { name: 'Godot / C# / GDScript', level: 85, icon: 'Gamepad2' },
   { name: 'Shaders HLSL / GLSL', level: 70, icon: 'Palette' }, 
   { name: '3D Math & Physics', level: 90, icon: 'Sigma' },
