@@ -7,7 +7,7 @@ export const SOLO_PROJECTS: Project[] = [
   {
     id: 'p1',
     title: 'Crocogame',
-    category: 'Action Roguelike Game',
+    category: 'Roguelike Game',
     description: 'A fast-paced roguelike game where you play as a crocodile trying to survive in a world full of predators.',
     imageUrl: 'crocogame.jpg',
     videoUrl: 'crocogame_trailer.mp4',
@@ -41,7 +41,7 @@ export const SOLO_PROJECTS: Project[] = [
   {
     id: 'p3',
     title: 'Untitled monster breeding game',
-    category: 'Strategy Roguelike Game',
+    category: 'Roguelike Game',
     description: 'A Roguelike monster breeding game about combining monster parts and breeding monsters to create strategic auto-battler synergies.',
     imageUrl: 'roguemon.png',
     videoUrl: 'RoguemonShowcase.mp4',
