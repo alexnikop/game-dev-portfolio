@@ -8,8 +8,10 @@ const Projects: React.FC = () => {
       {/* --- SOLO PROJECTS SECTION --- */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
          <div className="flex items-center gap-6 mb-16">
-             <div className="w-16 h-1 bg-neon-purple"></div>
-             <h2 className="font-display text-xl md:text-2xl font-bold tracking-widest uppercase">MAIN QUESTS</h2>
+             <div className="w-16 h-1 bg-gradient-to-r from-neon-purple via-neon-orange to-transparent"></div>
+             <h2 className="font-display text-xl md:text-2xl font-bold tracking-widest uppercase text-white">
+               <span className="text-neon-purple">★</span> MAIN QUESTS <span className="text-neon-purple">★</span>
+             </h2>
          </div>
         
         {/* Grid Layout - Headers removed as requested */}
@@ -23,8 +25,10 @@ const Projects: React.FC = () => {
       {/* --- OTHER PROJECTS SECTION --- */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-6 mb-12">
-             <div className="w-16 h-1 bg-neon-cyan"></div>
-             <h2 className="font-display text-xl md:text-2xl font-bold tracking-widest uppercase">OTHER QUESTS</h2>
+             <div className="w-16 h-1 bg-gradient-to-r from-neon-cyan via-neon-green to-transparent"></div>
+             <h2 className="font-display text-xl md:text-2xl font-bold tracking-widest uppercase text-white">
+               <span className="text-neon-cyan">◆</span> SIDE QUESTS <span className="text-neon-cyan">◆</span>
+             </h2>
          </div>
 
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

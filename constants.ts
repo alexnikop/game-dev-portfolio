@@ -1,18 +1,18 @@
 import { Project, Skill, SocialLink } from './types';
 
 export const HERO_TITLE = "Building Worlds, One Pixel at a Time.";
-export const HERO_SUBTITLE = "I'm a gameplay engineer and technical artist specializing in immersive 3D experiences.";
+export const HERO_SUBTITLE = "I'm Alex, a game developer based in the Greece. I love prototyping, building games and learning new things.";
 
 export const SOLO_PROJECTS: Project[] = [
   {
     id: 'p1',
-    title: 'Neon Odyssey',
-    category: 'Action RPG',
-    description: 'A fast-paced cyberpunk RPG featuring real-time combat.',
-    imageUrl: '/neon-odyssey.jpg',
-    videoUrl: '/neon-odyssey.mp4',
-    link: '#play-neon',
-    techStack: ['Unity', 'C#', 'HLSL', 'FMOD', 'Solo Project'],
+    title: 'Crocogame',
+    category: 'Action Roguelike',
+    description: 'A fast-paced challenge-based roguelike game where you play as a crocodile trying to survive in a world full of predators.',
+    imageUrl: '/crocogame.jpg',
+    videoUrl: '/crocogame_trailer.mp4',
+    link: 'https://store.steampowered.com/app/2486760/Crocogame/',
+    techStack: ['Unity', 'C#', 'Solo Project'],
     featured: true,
     status: 'released'
   },

@@ -16,9 +16,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   };
 
   return (
-    <div className="group relative bg-dark-800/50 tech-border border border-white/10 hover:border-neon-purple/50 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
+    <div className="group relative bg-dark-800/60 tech-border border-2 border-neon-purple/30 hover:border-neon-purple transition-all duration-500 hover:-translate-y-2 flex flex-col h-full pixel-corners">
       {/* Hover Glow Effect */}
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-neon-purple to-neon-cyan opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-lg -z-10"></div>
+      <div className="absolute -inset-1 bg-gradient-to-r from-neon-purple via-neon-orange to-neon-cyan opacity-0 group-hover:opacity-30 transition-opacity duration-500 blur-xl -z-10"></div>
 
       {/* Media Container */}
       <div className="relative aspect-video overflow-hidden border-b border-white/5 bg-black">
@@ -58,7 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             {project.videoUrl && (
                 <button 
                     onClick={handlePlayClick}
-                    className="flex items-center justify-center gap-2 px-6 py-3 bg-neon-purple text-white font-bold tracking-wider tech-border-sm hover:bg-white hover:text-black transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300 shadow-lg shadow-neon-purple/20"
+                    className="flex items-center justify-center gap-2 px-6 py-3 bg-neon-purple text-white font-bold tracking-wider tech-border-sm arcade-btn neon-glow-pink hover:bg-neon-orange transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300"
                 >
                     <Play size={16} fill="currentColor" /> PLAY CLIP
                 </button>
@@ -67,17 +67,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         )}
         
         {/* Category Badge */}
-        <div className="absolute top-4 left-4 px-3 py-1 bg-black/80 backdrop-blur-md border border-neon-cyan/30 tech-border-sm pointer-events-none">
-            <span className="text-neon-cyan text-[10px] font-mono tracking-widest uppercase">
-              {project.category}
+        <div className="absolute top-4 left-4 px-3 py-1 bg-dark-900/90 backdrop-blur-md border-2 border-neon-cyan/50 tech-border-sm pointer-events-none">
+            <span className="text-neon-cyan text-[10px] font-mono tracking-widest uppercase font-bold">
+              ◆ {project.category}
             </span>
         </div>
 
         {/* Status Badge */}
-        <div className={`absolute top-4 right-4 px-3 py-1 bg-black/80 backdrop-blur-md border tech-border-sm pointer-events-none ${project.status === 'prototype' ? 'border-yellow-500/50 text-yellow-500' : 'border-green-500/50 text-green-500'}`}>
-            <span className="text-[10px] font-mono tracking-widest uppercase flex items-center gap-2">
-               <div className={`w-1.5 h-1.5 rounded-full ${project.status === 'prototype' ? 'bg-yellow-500' : 'bg-green-500'} animate-pulse`}></div>
-               {project.status === 'prototype' ? 'WIP / PROTOTYPE' : 'RELEASED'}
+        <div className={`absolute top-4 right-4 px-3 py-1 bg-dark-900/90 backdrop-blur-md border-2 tech-border-sm pointer-events-none ${project.status === 'prototype' ? 'border-neon-orange/70 text-neon-orange' : 'border-neon-green/70 text-neon-green'}`}>
+            <span className="text-[10px] font-mono tracking-widest uppercase flex items-center gap-2 font-bold">
+               <div className={`w-2 h-2 ${project.status === 'prototype' ? 'bg-neon-orange' : 'bg-neon-green'} animate-pulse`} style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }}></div>
+               {project.status === 'prototype' ? '⚠ IN DEV' : '✓ RELEASED'}
             </span>
         </div>
       </div>
@@ -118,13 +118,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </div>
 
             {/* Action Footer - Always render to maintain height consistency */}
-            <div className="pt-4 border-t border-white/5 flex justify-end min-h-[3.5rem] items-center">
+            <div className="pt-4 border-t border-neon-purple/20 flex justify-end min-h-[3.5rem] items-center">
                 {project.link && (
                      <a 
                         href={project.link} 
-                        className="group/btn flex items-center gap-2 text-sm font-bold text-neon-cyan hover:text-white transition-colors tracking-widest uppercase"
+                        className="group/btn flex items-center gap-2 text-sm font-bold text-neon-cyan hover:text-neon-yellow transition-colors tracking-widest uppercase"
                     >
-                        VIEW PROJECT <ArrowRight size={16} className="transform group-hover/btn:translate-x-1 transition-transform" />
+                        ▶ VIEW PROJECT <ArrowRight size={16} className="transform group-hover/btn:translate-x-2 transition-transform" />
                     </a>
                 )}
             </div>

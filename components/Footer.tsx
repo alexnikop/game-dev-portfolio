@@ -31,10 +31,11 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
             <div>
                 <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-6 uppercase leading-none">
-                    Mission<br/>Complete?
+                    <span className="text-neon-yellow">⚔</span> Mission<br/>Complete<span className="text-neon-purple">?</span>
                 </h2>
-                <p className="text-gray-400 font-mono max-w-md text-lg">
-                    Not yet. I'm currently scouting for new quests and co-op opportunities. 
+                <p className="text-gray-400 font-mono max-w-md text-lg border-l-2 border-neon-purple/50 pl-4">
+                    <span className="text-neon-cyan">&gt;</span> Not yet. Currently accepting new quests and co-op invites. 
+                    <span className="inline-block w-2 h-4 bg-neon-green ml-1 animate-flicker"></span>
                 </p>
             </div>
             
@@ -42,7 +43,7 @@ const Footer: React.FC = () => {
                  {/* Email Box with Improved Layering */}
                  <div className="relative group w-full max-w-md mx-auto md:mx-0">
                     {/* Outer Border Layer */}
-                    <div className="absolute inset-0 bg-white/10 tech-border group-hover:bg-neon-cyan transition-colors duration-300"></div>
+                    <div className="absolute inset-0 bg-neon-purple/20 tech-border group-hover:bg-neon-cyan transition-colors duration-300 neon-glow-pink"></div>
                     
                     {/* Inner Content Layer (Gap creates border effect) */}
                     <div className="absolute inset-[2px] bg-dark-900 tech-border z-10"></div>
@@ -92,10 +93,12 @@ const Footer: React.FC = () => {
             })}
             </div>
 
-            <div className="text-gray-600 text-[10px] font-mono uppercase tracking-[0.2em] flex items-center gap-4">
-                <span>© {new Date().getFullYear()} Alex Vector</span>
-                <span className="w-1 h-1 bg-gray-600 rounded-full"></span>
-                <span>All Rights Reserved</span>
+            <div className="text-gray-500 text-[10px] font-mono uppercase tracking-[0.2em] flex items-center gap-4">
+                <span className="text-neon-purple">♦</span>
+                <span>© {new Date().getFullYear()} ALEHOOLEO</span>
+                <span className="w-1.5 h-1.5 bg-neon-cyan rounded-full animate-pulse"></span>
+                <span>GAME OVER? NEVER.</span>
+                <span className="text-neon-cyan">♦</span>
             </div>
         </div>
       </div>

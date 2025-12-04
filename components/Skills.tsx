@@ -45,9 +45,12 @@ const Skills: React.FC = () => {
         {/* Header */}
         <div className="flex flex-col items-end mb-16">
              <div className="flex items-center gap-6">
-                 <h2 className="font-display text-xl md:text-2xl font-bold tracking-widest uppercase">SKILL TREE</h2>
-                 <div className="w-16 h-1 bg-neon-green"></div>
+                 <h2 className="font-display text-xl md:text-2xl font-bold tracking-widest uppercase text-white">
+                   <span className="text-neon-green">⚡</span> SKILL TREE <span className="text-neon-green">⚡</span>
+                 </h2>
+                 <div className="w-16 h-1 bg-gradient-to-r from-neon-green via-neon-yellow to-transparent"></div>
              </div>
+             <div className="text-xs font-mono text-neon-green/60 mt-2 tracking-widest">LVL 99 • XP: 999,999</div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -69,29 +72,34 @@ const Skills: React.FC = () => {
               >
                 <div className="h-full p-6 flex flex-col">
                     <div className="flex justify-between items-start mb-6">
-                        <div className="p-3 bg-neon-green/10 text-neon-green rounded tech-border-sm group-hover:bg-neon-green group-hover:text-black transition-colors duration-300">
+                        <div className="p-3 bg-neon-green/10 text-neon-green rounded tech-border-sm group-hover:bg-neon-green group-hover:text-dark-900 transition-colors duration-300 neon-glow-green">
                             {/* @ts-ignore */}
                             <IconComponent size={24} className={skill.icon === 'Unity' ? "fill-current" : ""} />
                         </div>
-                        <span className="font-mono text-2xl font-bold text-gray-500 group-hover:text-white transition-colors">
-                            {skill.level}<span className="text-xs align-top">%</span>
-                        </span>
+                        <div className="text-right">
+                          <span className="font-mono text-2xl font-bold text-neon-yellow group-hover:text-white transition-colors">
+                              {skill.level}<span className="text-xs align-top text-neon-orange">%</span>
+                          </span>
+                          <div className="text-[10px] font-mono text-gray-500">MASTERY</div>
+                        </div>
                     </div>
 
                     <h3 className="text-xl font-bold text-white font-display uppercase tracking-wide mb-2">{skill.name}</h3>
                     
-                    {/* Progress Bar styled as HP bar */}
-                    <div className="w-full h-2 bg-black/50 mt-auto relative overflow-hidden skew-x-[-20deg]">
+                    {/* Progress Bar styled as XP bar */}
+                    <div className="w-full h-3 bg-black/70 mt-auto relative overflow-hidden skew-x-[-20deg] border border-neon-green/30">
                         <div 
-                            className="h-full bg-neon-green/80 shadow-[0_0_10px_rgba(0,255,157,0.5)] group-hover:bg-neon-green transition-all duration-1000 ease-out"
+                            className="h-full xp-bar group-hover:shadow-[0_0_15px_rgba(57,255,20,0.7)] transition-all duration-1000 ease-out"
                             style={{ width: `${skill.level}%` }}
                         ></div>
                         {/* Grid lines on bar */}
                         <div className="absolute inset-0 flex justify-between px-1">
-                            {[...Array(5)].map((_, i) => (
-                                <div key={i} className="w-[1px] h-full bg-black/30"></div>
+                            {[...Array(10)].map((_, i) => (
+                                <div key={i} className="w-[1px] h-full bg-black/50"></div>
                             ))}
                         </div>
+                        {/* Shine effect */}
+                        <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent h-1/2"></div>
                     </div>
                 </div>
                 
