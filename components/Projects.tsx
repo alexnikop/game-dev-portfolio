@@ -79,7 +79,8 @@ const Projects: React.FC = () => {
                       <div className="flex-shrink-0 w-32 h-32 sm:w-48 sm:h-48 bg-black/50 border-2 border-neon-cyan/20 group-hover:border-neon-green/50 flex items-center justify-center p-4 rounded-sm tech-border-sm self-start sm:self-center transition-colors">
                          <img 
                             src={project.icon} 
-                            alt={`${project.title} icon`} 
+                            alt={`${project.title} icon`}
+                            loading="lazy"
                             className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity"
                             onError={(e) => {
                                 // If icon fails to load, hide the container

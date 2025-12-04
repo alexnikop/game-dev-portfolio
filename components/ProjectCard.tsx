@@ -30,6 +30,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             controls 
             loop
             muted={false}
+            playsInline
+            preload="auto"
           />
         ) : (
           <>
@@ -42,6 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <img 
                 src={project.imageUrl} 
                 alt={project.title} 
+                loading="lazy"
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                 onError={() => setImageError(true)}
                 />
