@@ -53,7 +53,7 @@ export const SOLO_PROJECTS: Project[] = [
   {
     id: 'p4',
     title: 'Hexacore',
-    category: 'Action Roguelike Game',
+    category: 'Roguelike Game',
     description: 'A roguelike bullet-hell game about building a spaceship, through attaching hexagonal parts to it.',
     imageUrl: 'hexacored.png',
     videoUrl: 'hexacore_showcase.mp4',
