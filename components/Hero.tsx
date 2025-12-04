@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Main Content - Centered with flex-grow */}
-      <div className="relative z-10 flex-grow flex items-center justify-center">
+      <div className="relative z-10 flex-grow flex items-center justify-center mb-16 sm:mb-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
           {/* HUD Decoration - Arcade Style */}
           <div className="flex items-center gap-2 mb-6">
@@ -73,8 +73,8 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator - Part of content flow, always at bottom */}
-      <div className="hidden sm:flex relative z-20 justify-center pointer-events-none mt-auto">
+      {/* Scroll Indicator - Part of content flow, always at bottom with min spacing */}
+      <div className="hidden sm:flex relative z-20 justify-center pointer-events-none flex-shrink-0">
           <div className="flex flex-col items-center gap-3 animate-bounce">
             <span className="text-xs md:text-sm font-mono tracking-[0.3em] uppercase text-neon-yellow animate-flicker">SCROLL</span>
             <ArrowDown className="text-neon-cyan w-6 h-6 md:w-8 md:h-8" style={{ filter: 'drop-shadow(0 0 8px #00fff5)' }} />
