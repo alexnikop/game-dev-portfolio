@@ -40,13 +40,13 @@ export const SOLO_PROJECTS: Project[] = [
   },
   {
     id: 'p3',
-    title: 'Untitled roguelike monster breeding game',
+    title: '[Untitled]',
     category: 'Strategy Roguelike',
     description: 'A Roguelike monster breeding game about combining monster parts and breeding monsters to create strategic auto-battler synergies.',
     imageUrl: '/void-drifter.jpg',
     videoUrl: '/void-drifter.mp4',
     // No link provided
-    techStack: ['Godot5', 'C#', 'Steam', 'Solo Project'],
+    techStack: ['Godot', 'C#', 'Procedural Mesh Generation', 'Solo Project'],
     featured: true,
     status: 'prototype'
   },

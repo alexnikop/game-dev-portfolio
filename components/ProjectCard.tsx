@@ -118,7 +118,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </div>
 
             {/* Action Footer - Always render to maintain height consistency */}
-            <div className="pt-4 border-t border-neon-purple/20 flex justify-end min-h-[3.5rem] items-center">
+            <div className="pt-2 flex justify-end min-h-[3.5rem] items-center">
                 {project.link && (
                      <a 
                         href={project.link}
