@@ -55,16 +55,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </>
         )}
         
-        {/* Overlay Actions (Only visible if there's a video and not playing) */}
+        {/* Persistent Play Button - Bottom left when video exists */}
         {!isPlaying && project.videoUrl && (
-          <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-[2px]">
-            <button 
-                onClick={handlePlayClick}
-                className="flex items-center justify-center gap-2 px-6 py-3 bg-neon-purple text-white font-bold tracking-wider tech-border-sm arcade-btn neon-glow-pink hover:bg-neon-orange transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300"
-            >
-                <Play size={16} fill="currentColor" /> PLAY CLIP
-            </button>
-          </div>
+          <button 
+              onClick={handlePlayClick}
+              className="absolute bottom-4 left-4 flex items-center justify-center gap-2 px-4 py-2 bg-neon-purple/90 text-white font-bold tracking-wider text-sm tech-border-sm arcade-btn neon-glow-pink hover:bg-neon-orange transition-colors z-10"
+          >
+              <Play size={14} fill="currentColor" /> PLAY
+          </button>
         )}
         
         {/* Category Badge */}

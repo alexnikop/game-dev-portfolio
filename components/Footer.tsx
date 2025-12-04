@@ -40,8 +40,11 @@ const Footer: React.FC = () => {
             </div>
             
             <div className="flex flex-col justify-center">
-                 {/* Email Box with Improved Layering */}
-                 <div className="relative group w-full max-w-md mx-auto md:mx-0">
+                 {/* Email Box with Improved Layering - Entire box is clickable */}
+                 <div 
+                    onClick={handleCopyEmail}
+                    className="relative group w-full max-w-md mx-auto md:mx-0 cursor-pointer"
+                 >
                     {/* Outer Border Layer */}
                     <div className="absolute inset-0 bg-neon-purple/20 tech-border group-hover:bg-neon-cyan transition-colors duration-300 neon-glow-pink"></div>
                     
@@ -53,13 +56,10 @@ const Footer: React.FC = () => {
                         <div className="absolute -top-2.5 left-8 bg-dark-900 px-2 text-neon-cyan text-xs font-mono tracking-widest z-30">
                             CONTACT_CHANNEL
                         </div>
-                        <button 
-                          onClick={handleCopyEmail}
-                          className="block text-xl sm:text-2xl md:text-3xl font-display font-bold text-white hover:text-neon-cyan transition-colors text-center break-all cursor-pointer bg-transparent border-none"
-                        >
+                        <span className="block text-xl sm:text-2xl md:text-3xl font-display font-bold text-white group-hover:text-neon-cyan transition-colors text-center break-all">
                             {EMAIL}
-                        </button>
-                        <span className="text-xs text-gray-500 font-mono mt-2">Click to copy</span>
+                        </span>
+                        <span className="text-xs text-gray-500 font-mono mt-2 group-hover:text-gray-400 transition-colors">Click anywhere to copy</span>
                         
                         {/* Copied Toast Popup */}
                         <div 
