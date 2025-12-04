@@ -7,29 +7,51 @@ export const SOLO_PROJECTS: Project[] = [
   {
     id: 'p1',
     title: 'Crocogame',
-    category: 'Action Roguelike',
-    description: 'A fast-paced challenge-based roguelike game where you play as a crocodile trying to survive in a world full of predators.',
+    category: 'Action Roguelike Game',
+    description: 'A fast-paced roguelike game where you play as a crocodile trying to survive in a world full of predators.',
     imageUrl: '/crocogame.jpg',
     videoUrl: '/crocogame_trailer.mp4',
     link: 'https://store.steampowered.com/app/2486760/Crocogame/',
-    techStack: ['Unity', 'C#', 'Solo Project'],
+    techStack: ['Unity', 'C#', 'Steam', 'Solo Project'],
     featured: true,
     status: 'released'
   },
   {
-    id: 'p2',
-    title: 'Void Drifter',
-    category: 'Space Sim',
-    description: 'Physics-based space exploration prototype.',
+    id: 'p1',
+    title: 'Blockzilla',
+    category: 'Puzzle Game',
+    description: 'A mind-bending puzzle game about pushing blocks around.',
+    imageUrl: '/blockzilla_showcase.png',
+    link: 'https://play.google.com/store/apps/details?id=org.godotengine.blockogame&hl=en',
+    techStack: ['Godot', 'GDScript', 'Android', 'Solo Project'],
+    featured: true,
+    status: 'released'
+  },
+  {
+    id: 'p3',
+    title: 'VFEZ-Godot',
+    category: 'Plugin',
+    description: 'An easy-to-use Godot plugin for creating 2D and 3D visual effects easily. Similar to Unity All-in-one-shader plugin.',
+    imageUrl: '/vfez-godot-better-ratio.png',
+    link: 'https://github.com/alexnikop/VFEZ-godot',
+    techStack: ['Godot', 'GDScript', 'GLSL', 'Solo Project'],
+    featured: true,
+    status: 'released'
+  },
+  {
+    id: 'p3',
+    title: 'Untitled roguelike monster breeding game',
+    category: 'Strategy Roguelike',
+    description: 'A Roguelike monster breeding game about combining monster parts and breeding monsters to create strategic auto-battler synergies.',
     imageUrl: '/void-drifter.jpg',
     videoUrl: '/void-drifter.mp4',
     // No link provided
-    techStack: ['Unreal Engine 5', 'C++', 'Blueprints', 'Solo Project'],
+    techStack: ['Godot5', 'C#', 'Steam', 'Solo Project'],
     featured: true,
     status: 'prototype'
   },
   {
-    id: 'p3',
+    id: 'p4',
     title: 'WebSynthetix',
     category: 'Audio Tool',
     description: 'Browser-based procedural audio synthesizer.',
@@ -60,7 +82,7 @@ export const COLLAB_PROJECTS: Project[] = [
     category: 'Racing',
     description: 'Arcade racer focusing on drift mechanics.',
     imageUrl: '/hyper-racer-cover.jpg',
-    icon: '/hyper-racer-icon.png',
+    // icon removed - file doesn't exist
     techStack: ['Unity', 'Photon'],
     link: '#',
     status: 'released'
@@ -82,7 +104,7 @@ export const COLLAB_PROJECTS: Project[] = [
     category: 'Strategy',
     description: 'Turn-based tactical prototype exploring complex AI behaviors:\n• Implemented Goal-Oriented Action Planning (GOAP)\n• Custom A* pathfinding on hexagonal grids\n• Dynamic fog of war system\n• Procedural map generation',
     imageUrl: '/pixel-tactics-cover.jpg',
-    icon: '/pixel-tactics-icon.png',
+    // icon removed - file doesn't exist
     techStack: ['C++', 'SDL2'],
     link: '#',
     status: 'prototype'
@@ -99,7 +121,7 @@ export const SKILLS: Skill[] = [
 ];
 
 export const SOCIALS: SocialLink[] = [
-  { platform: 'GitHub', url: '#', icon: 'Github' },
-  { platform: 'Itch.io', url: '#', icon: 'Gamepad' },
-  { platform: 'Twitter', url: '#', icon: 'Twitter' },
+  { platform: 'GitHub', url: 'https://github.com/alexnikop', icon: 'Github' },
+  { platform: 'Itch.io', url: 'https://alehooleo.itch.io/', icon: 'Gamepad' },
+  { platform: 'Twitter', url: 'https://x.com/alehooleo', icon: 'Twitter' },
 ];

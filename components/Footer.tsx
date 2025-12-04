@@ -84,6 +84,8 @@ const Footer: React.FC = () => {
                 <a
                     key={social.platform}
                     href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group relative p-3 bg-dark-800 border border-white/10 tech-border-sm hover:bg-neon-purple hover:border-neon-purple transition-all duration-300"
                     aria-label={social.platform}
                 >
