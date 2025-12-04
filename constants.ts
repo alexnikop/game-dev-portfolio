@@ -1,7 +1,7 @@
 import { Project, Skill, SocialLink } from './types';
 
 export const HERO_TITLE = "Building Worlds, One Pixel at a Time.";
-export const HERO_SUBTITLE = "I'm Alex, a game developer based in the Greece. I love prototyping, building games and learning new things.";
+export const HERO_SUBTITLE = "I'm Alex, a game developer from Greece with a passion for prototyping novel mechanics and obsessing over the finer points of game design.";
 
 export const SOLO_PROJECTS: Project[] = [
   {
@@ -40,11 +40,11 @@ export const SOLO_PROJECTS: Project[] = [
   },
   {
     id: 'p3',
-    title: '[Untitled]',
-    category: 'Strategy Roguelike',
+    title: 'Untitled monster breeding game',
+    category: 'Strategy Roguelike Game',
     description: 'A Roguelike monster breeding game about combining monster parts and breeding monsters to create strategic auto-battler synergies.',
-    imageUrl: '/void-drifter.jpg',
-    videoUrl: '/void-drifter.mp4',
+    imageUrl: '/roguemon.png',
+    videoUrl: '/RoguemonShowcase.mp4',
     // No link provided
     techStack: ['Godot', 'C#', 'Procedural Mesh Generation', 'Solo Project'],
     featured: true,
@@ -52,72 +52,73 @@ export const SOLO_PROJECTS: Project[] = [
   },
   {
     id: 'p4',
-    title: 'WebSynthetix',
-    category: 'Audio Tool',
-    description: 'Browser-based procedural audio synthesizer.',
-    imageUrl: '/websynthetix.jpg',
+    title: 'Hexacore',
+    category: 'Action Roguelike Game',
+    description: 'A roguelike bullet-hell game about building a spaceship, through attaching hexagonal parts to it.',
+    imageUrl: '/hexacored.png',
+    videoUrl: '/hexacore_showcase.mp4',
     // No video provided
-    link: '#tool-link',
-    techStack: ['React', 'Web Audio API', 'TypeScript', 'Solo Project'],
+    techStack: ['Godot', 'GDScript', 'Solo Project'],
     featured: true,
-    status: 'released'
+    status: 'prototype'
   }
 ];
 
 export const COLLAB_PROJECTS: Project[] = [
   {
     id: 'c1',
-    title: '3D AR preview app',
-    category: 'Utility',
-    description: 'Mobile puzzle game about growing magical forests.',
+    title: '3D AR Preview App',
+    category: 'Showcase App',
+    description: 'A Unity 3D AR app, aimed to preview AI generated 3D models in real world.',
     imageUrl: '3d4xr.png', 
     icon: '3d4xr.png', 
-    techStack: ['Godot', 'GDScript'],
+    techStack: ['Unity', 'AR'],
     link: '#',
     status: 'released'
   },
   {
     id: 'c2',
-    title: 'Hyper Racer X',
-    category: 'Racing',
-    description: 'Arcade racer focusing on drift mechanics.',
-    imageUrl: '/hyper-racer-cover.jpg',
-    // icon removed - file doesn't exist
-    techStack: ['Unity', 'Photon'],
+    title: '3D VR Basketball Preview App',
+    category: 'Showcase App',
+    description: 'A Unity 3D VR app, aimed to preview AI generated 3D models in VR Space.',
+    imageUrl: 'vrBasketball.jpeg',
+    icon: 'vrBasketball.jpeg', 
+    techStack: ['Unity', 'VR'],
     link: '#',
     status: 'released'
   },
   {
     id: 'c3',
-    title: 'Echo Chamber',
-    category: 'Horror Jam',
-    description: 'Global Game Jam 2024 Entry. Audio-based navigation mechanics.',
-    imageUrl: '/echo-chamber-cover.jpg',
+    title: 'Unity VR Authoring Plugin',
+    category: 'Unity Plugin',
+    description: 'A Unity plugin for the CHROMATA research project, simplifying the creation of VR cultural heritage experiences.',
+    imageUrl: '/chromata.png',
+    icon: '/chromata.png', 
     // No icon
-    techStack: ['Unity', 'Wwise'],
+    techStack: ['Unity', 'VR'],
     link: '#',
     status: 'prototype'
   },
     {
     id: 'c4',
-    title: 'Pixel Tactics',
-    category: 'Strategy',
-    description: 'Turn-based tactical prototype exploring complex AI behaviors:\n• Implemented Goal-Oriented Action Planning (GOAP)\n• Custom A* pathfinding on hexagonal grids\n• Dynamic fog of war system\n• Procedural map generation',
-    imageUrl: '/pixel-tactics-cover.jpg',
+    title: 'Various Unity Utility Plugins',
+    category: 'Unity Plugin',
+    description: 'A collection of Unity plugins built to speed up development:\n• GraphQLWrapper — GraphQL API integration & error handling\n• UnitySmartMedia — Runtime image/video downloading & display\n• UnityInputValidator — Form validation made simple\n• UnitySceneObjectPlacement — AR model placement & gesture controls',
+    imageUrl: '',
     // icon removed - file doesn't exist
-    techStack: ['C++', 'SDL2'],
+    techStack: ['Unity', 'Networking'],
     link: '#',
     status: 'prototype'
   }
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'Unity / C#', level: 95, icon: 'Unity' }, 
-  { name: 'Godot C# / GDScript', level: 85, icon: 'Gamepad2' },
+  { name: 'Unity / C#', level: 90, icon: 'Unity' }, 
+  { name: 'Godot / C# / GDScript', level: 90, icon: 'Gamepad2' },
   { name: 'Shaders HLSL / GLSL', level: 80, icon: 'Palette' }, 
   { name: '3D Math & Physics', level: 90, icon: 'Sigma' },
   { name: 'Blender 3D Modeling', level: 50, icon: 'Blender' },
-  { name: 'Performance Profiling', level: 85, icon: 'Zap' },
+  { name: 'Performance Profiling', level: 80, icon: 'Zap' },
 ];
 
 export const SOCIALS: SocialLink[] = [

@@ -32,9 +32,9 @@ const Hero: React.FC = () => {
         </div>
         
         <h1 className="font-display text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter mb-8 leading-[0.9] drop-shadow-2xl uppercase relative">
-          <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-400">Building</span>
+          <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-400">Bending</span>
           <br />
-          <span className="relative z-10 gradient-text glitch-text" data-text="Worlds">Worlds</span>
+          <span className="relative z-10 gradient-text glitch-text" data-text="Worlds">Rules</span>
         </h1>
         
         <p className="mt-2 max-w-2xl mx-auto text-lg md:text-xl text-gray-400 font-light font-mono leading-relaxed border-l-2 border-neon-purple/50 pl-6 text-left md:text-center md:border-l-0 md:pl-0">
@@ -70,8 +70,8 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator - Arcade Style */}
-      <div className="absolute bottom-4 left-0 w-full flex justify-center z-20 pointer-events-none">
+      {/* Scroll Indicator - Arcade Style (hidden on small mobile, visible on md+) */}
+      <div className="hidden sm:flex absolute bottom-4 left-0 w-full justify-center z-20 pointer-events-none">
           <div className="flex flex-col items-center gap-3 animate-bounce">
             <span className="text-xs md:text-sm font-mono tracking-[0.3em] uppercase text-neon-yellow animate-flicker">SCROLL</span>
             <ArrowDown className="text-neon-cyan w-6 h-6 md:w-8 md:h-8" style={{ filter: 'drop-shadow(0 0 8px #00fff5)' }} />

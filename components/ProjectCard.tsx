@@ -77,7 +77,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className={`absolute top-4 right-4 px-3 py-1 bg-dark-900/90 backdrop-blur-md border-2 tech-border-sm pointer-events-none ${project.status === 'prototype' ? 'border-neon-orange/70 text-neon-orange' : 'border-neon-green/70 text-neon-green'}`}>
             <span className="text-[10px] font-mono tracking-widest uppercase flex items-center gap-2 font-bold">
                <div className={`w-2 h-2 ${project.status === 'prototype' ? 'bg-neon-orange' : 'bg-neon-green'} animate-pulse`} style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }}></div>
-               {project.status === 'prototype' ? '⚠ IN DEV' : '✓ RELEASED'}
+               {project.status === 'prototype' ? '⚠ IN DEV / PROTOTYPE' : '✓ RELEASED'}
             </span>
         </div>
       </div>
