@@ -104,7 +104,7 @@ export const COLLAB_PROJECTS: Project[] = [
     id: 'c4',
     title: 'Various Unity Utility Plugins',
     category: 'Unity Plugin',
-    description: 'A collection of Unity plugins built to speed up development:\n• GraphQLWrapper — GraphQL API integration & error handling\n• UnitySmartMedia — Runtime image/video downloading & display\n• UnityInputValidator — Form validation made simple\n• UnitySceneObjectPlacement — AR model placement & gesture controls',
+    description: '• Engineered a custom GraphQL wrapper plugin with robust error handling to automate Unity integration with the company backend.\n• Implemented a persistent AR object system, allowing users to place, manipulate, and sync 3D model positions to the database in real-time.\n• Integrated Keycloak authentication via WebView to accelerate the creation of secure login flows within Unity.\n• Built a reusable Input Validation plugin to automate form handling and ensure data integrity across UI components.',
     imageUrl: '',
     // icon removed - file doesn't exist
     techStack: ['Unity', 'Networking'],
