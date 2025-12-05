@@ -50,7 +50,6 @@ const Skills: React.FC = () => {
                  </h2>
                  <div className="w-16 h-1 bg-gradient-to-r from-neon-green via-neon-yellow to-transparent"></div>
              </div>
-             <div className="text-xs font-mono text-neon-green/60 mt-2 tracking-widest">LVL 99 • XP: 999,999</div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -71,35 +70,24 @@ const Skills: React.FC = () => {
                 className="group relative bg-dark-800/40 backdrop-blur-md p-1 tech-border border border-white/5 hover:border-neon-green/50 transition-all duration-300 hover:bg-dark-800/60"
               >
                 <div className="h-full p-6 flex flex-col">
-                    <div className="flex justify-between items-start mb-6">
-                        <div className="p-3 bg-neon-green/10 text-neon-green rounded tech-border-sm group-hover:bg-neon-green group-hover:text-dark-900 transition-colors duration-300 neon-glow-green">
+                    <div className="flex items-start gap-4 mb-4">
+                        <div className="p-3 bg-neon-green/10 text-neon-green rounded tech-border-sm group-hover:bg-neon-green group-hover:text-dark-900 transition-colors duration-300 neon-glow-green flex-shrink-0">
                             {/* @ts-ignore */}
                             <IconComponent size={24} className={skill.icon === 'Unity' ? "fill-current" : ""} />
                         </div>
-                        <div className="text-right">
-                          <span className="font-mono text-2xl font-bold text-neon-yellow group-hover:text-white transition-colors">
-                              {skill.level}<span className="text-xs align-top text-neon-orange">%</span>
-                          </span>
-                          <div className="text-[10px] font-mono text-gray-500">MASTERY</div>
-                        </div>
+                        <h3 className="text-lg font-bold text-white font-display uppercase tracking-wide group-hover:text-neon-green transition-colors">{skill.name}</h3>
                     </div>
-
-                    <h3 className="text-xl font-bold text-white font-display uppercase tracking-wide mb-2">{skill.name}</h3>
                     
-                    {/* Progress Bar styled as XP bar */}
-                    <div className="w-full h-3 bg-black/70 mt-auto relative overflow-hidden skew-x-[-20deg] border border-neon-green/30">
-                        <div 
-                            className="h-full xp-bar group-hover:shadow-[0_0_15px_rgba(57,255,20,0.7)] transition-all duration-1000 ease-out"
-                            style={{ width: `${skill.level}%` }}
-                        ></div>
-                        {/* Grid lines on bar */}
-                        <div className="absolute inset-0 flex justify-between px-1">
-                            {[...Array(10)].map((_, i) => (
-                                <div key={i} className="w-[1px] h-full bg-black/50"></div>
-                            ))}
-                        </div>
-                        {/* Shine effect */}
-                        <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent h-1/2"></div>
+                    {/* Sub-skills list */}
+                    <div className="flex flex-wrap gap-2 mt-auto">
+                        {skill.subSkills.map((subSkill) => (
+                            <span 
+                                key={subSkill}
+                                className="px-2 py-1 bg-neon-green/5 border border-neon-green/20 rounded-sm text-[11px] text-gray-400 font-mono group-hover:border-neon-green/40 group-hover:text-gray-300 transition-colors"
+                            >
+                                {subSkill}
+                            </span>
+                        ))}
                     </div>
                 </div>
                 

@@ -125,7 +125,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                         rel="noopener noreferrer"
                         className="group/btn flex items-center gap-2 text-sm font-bold text-neon-cyan hover:text-neon-yellow transition-colors tracking-widest uppercase"
                     >
-                        ▶ VIEW PROJECT <ArrowRight size={16} className="transform group-hover/btn:translate-x-2 transition-transform" />
+                        ▶ {project.linkText || 'VIEW PROJECT'} <ArrowRight size={16} className="transform group-hover/btn:translate-x-2 transition-transform" />
                     </a>
                 )}
             </div>

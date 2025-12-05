@@ -34,9 +34,9 @@ const Hero: React.FC = () => {
           </div>
           
           <h1 className="font-display text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter mb-8 leading-[0.9] drop-shadow-2xl uppercase relative">
-            <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-400">Bending</span>
+            <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-400">ENGINEERING</span>
             <br />
-            <span className="relative z-10 gradient-text glitch-text" data-text="Worlds">Rules</span>
+            <span className="relative z-10 gradient-text glitch-text" data-text="Worlds">IMMERSION</span>
           </h1>
           
           <p className="mt-2 max-w-2xl mx-auto text-lg md:text-xl text-gray-400 font-light font-mono leading-relaxed border-l-2 border-neon-purple/50 pl-6 text-left md:text-center md:border-l-0 md:pl-0">

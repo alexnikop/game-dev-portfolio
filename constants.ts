@@ -1,7 +1,7 @@
 import { Project, Skill, SocialLink } from './types';
 
 export const HERO_TITLE = "Building Worlds, One Pixel at a Time.";
-export const HERO_SUBTITLE = "I'm Alex, a game developer from Greece with a passion for prototyping novel mechanics and obsessing over the finer points of game design.";
+export const HERO_SUBTITLE = "I'm Alex, a Game Developer and Engineer bridging the gap between creative design and robust architecture. I have a passion for prototyping novel mechanics and translating complex technical requirements into smooth user experiences.";
 
 export const SOLO_PROJECTS: Project[] = [
   {
@@ -12,17 +12,19 @@ export const SOLO_PROJECTS: Project[] = [
     imageUrl: 'crocogame.jpg',
     videoUrl: 'crocogame_trailer.mp4',
     link: 'https://store.steampowered.com/app/2486760/Crocogame/',
+    linkText: 'VIEW ON STEAM',
     techStack: ['Unity', 'C#', 'Steam', 'Solo Project'],
     featured: true,
     status: 'released'
   },
   {
-    id: 'p1',
+    id: 'p2',
     title: 'Blockzilla',
     category: 'Puzzle Game',
     description: 'A mind-bending puzzle game about pushing blocks — simple rules, tricky solutions.',
     imageUrl: 'blockzilla_showcase.png',
     link: 'https://play.google.com/store/apps/details?id=org.godotengine.blockogame&hl=en',
+    linkText: 'VIEW ON PLAY STORE',
     techStack: ['Godot', 'GDScript', 'Android', 'Solo Project'],
     featured: true,
     status: 'released'
@@ -34,30 +36,29 @@ export const SOLO_PROJECTS: Project[] = [
     description: 'A Godot plugin for creating 2D/3D visual effects with ease. Think Unity\'s All-in-One Shader, but for Godot.',
     imageUrl: 'vfez-godot-better-ratio.png',
     link: 'https://github.com/alexnikop/VFEZ-godot',
+    linkText: 'VIEW ON GITHUB',
     techStack: ['Godot', 'GDScript', 'GLSL', 'Solo Project'],
     featured: true,
     status: 'released'
   },
   {
-    id: 'p3',
+    id: 'p4',
     title: 'Untitled monster breeding game',
     category: 'Roguelike Game',
     description: 'A roguelike auto-battler where you breed monsters and combine parts to create powerful synergies.',
     imageUrl: 'roguemon.png',
     videoUrl: 'RoguemonShowcase.mp4',
-    // No link provided
     techStack: ['Godot', 'C#', 'Procedural Mesh Generation', 'Solo Project'],
     featured: true,
     status: 'prototype'
   },
   {
-    id: 'p4',
+    id: 'p5',
     title: 'Hexacored',
     category: 'Roguelike Game',
     description: 'A roguelike bullet-hell where you build your spaceship piece by piece using hexagonal modules.',
     imageUrl: 'hexacored.png',
     videoUrl: 'hexacore_showcase.mp4',
-    // No video provided
     techStack: ['Godot', 'GDScript', 'Solo Project'],
     featured: true,
     status: 'prototype'
@@ -113,12 +114,36 @@ export const COLLAB_PROJECTS: Project[] = [
 ];
 
 export const SKILLS: Skill[] = [
-  { name: 'Unity / C#', level: 85, icon: 'Gamepad' }, 
-  { name: 'Godot / C# / GDScript', level: 85, icon: 'Gamepad2' },
-  { name: 'Shaders HLSL / GLSL', level: 70, icon: 'Palette' }, 
-  { name: '3D Math & Physics', level: 90, icon: 'Sigma' },
-  { name: 'Blender 3D Modeling', level: 50, icon: 'Blender' },
-  { name: 'Performance Profiling', level: 80, icon: 'Zap' },
+  { 
+    name: 'Unity / C#', 
+    subSkills: ['ECS', 'Addressables', 'Custom Editors', 'XR Technologies'],
+    icon: 'Gamepad' 
+  }, 
+  { 
+    name: 'Godot / C# / GDScript', 
+    subSkills: ['GDExtension', 'Signals', 'Custom Resources', 'Tool Scripts'],
+    icon: 'Gamepad2' 
+  },
+  { 
+    name: 'Shaders HLSL / GLSL', 
+    subSkills: ['Vertex Shaders', 'Fragment Shaders', 'Compute Shaders', 'Post Processing'],
+    icon: 'Palette' 
+  }, 
+  { 
+    name: '3D Math & Physics', 
+    subSkills: ['Linear Algebra', 'Vector Calculus', 'Rigid Body Dynamics', 'Collision Detection'],
+    icon: 'Sigma' 
+  },
+  { 
+    name: 'Blender 3D Modeling', 
+    subSkills: ['Low-Poly Modeling', 'UV Unwrapping', 'Rigging Basics', 'Sculpting Basics'],
+    icon: 'Blender' 
+  },
+  { 
+    name: 'Performance Profiling', 
+    subSkills: ['Memory Optimization', 'Draw Call Batching', 'LOD Systems', 'Object Pooling'],
+    icon: 'Zap' 
+  },
 ];
 
 export const SOCIALS: SocialLink[] = [

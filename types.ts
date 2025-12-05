@@ -6,6 +6,7 @@ export interface Project {
   imageUrl: string;
   videoUrl?: string; // For previews
   link?: string;     // For redirection
+  linkText?: string; // Custom text for the link button
   icon?: string;     // For Other Quests thumbnail
   techStack: string[];
   featured?: boolean;
@@ -14,7 +15,7 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  level: number; // 0-100
+  subSkills: string[];
   icon: string; // Lucide icon name or 'Unity'/'Blender' for custom SVGs
 }
 

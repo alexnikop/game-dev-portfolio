@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
          <div className="flex items-center gap-6 mb-16">
              <div className="w-16 h-1 bg-gradient-to-r from-neon-purple via-neon-orange to-transparent"></div>
              <h2 className="font-display text-xl md:text-2xl font-bold tracking-widest uppercase text-white">
-               <span className="text-neon-purple">★</span> MAIN QUESTS <span className="text-neon-purple">★</span>
+               <span className="text-neon-purple">★</span> INDIE PROJECTS <span className="text-neon-purple">★</span>
              </h2>
          </div>
         
@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
         <div className="flex items-center gap-6 mb-12">
              <div className="w-16 h-1 bg-gradient-to-r from-neon-cyan via-neon-green to-transparent"></div>
              <h2 className="font-display text-xl md:text-2xl font-bold tracking-widest uppercase text-white">
-               <span className="text-neon-cyan">◆</span> OTHER QUESTS <span className="text-neon-cyan">◆</span>
+               <span className="text-neon-cyan">◆</span> PROFESSIONAL WORK <span className="text-neon-cyan">◆</span>
              </h2>
          </div>
 
